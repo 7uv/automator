@@ -4339,7 +4339,7 @@ select[multiple].input-group-sm > .input-group-addon, select[multiple].input-gro
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #ffffff;
-    background-color: none;
+    background-color: unset;
 }
 
 .navbar-default .navbar-text {
@@ -4447,7 +4447,7 @@ select[multiple].input-group-sm > .input-group-addon, select[multiple].input-gro
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
     color: #ffffff;
-    background-color: none;
+    background-color: unset;
 }
 
 .navbar-inverse .navbar-text {
@@ -4986,32 +4986,6 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     color: #953b39;
 }
 
-@
--webkit-keyframes progress-bar-stripes {
-
-from {
-    background-position: 40 px0;
-
-}
-
-to {
-    background-position: 0 0;
-}
-
-}
-@
-keyframes progress-bar-stripes {
-
-from {
-    background-position: 40 px0;
-
-}
-
-to {
-    background-position: 0 0;
-}
-
-}
 .progress {
     overflow: hidden;
     height: 20px;
@@ -6453,12 +6427,6 @@ button.close {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
-
-@
--ms-viewport {
-    width: device-width;
-}
-
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
     display: none !important;
 }
@@ -7313,7 +7281,7 @@ h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small,
 h1, .h1 {
     font-size: 36px;
     font-variant: small-caps;
-    font-family: 'American Typewriter', 'Courier New', 'Monospace';
+    font-family: 'Cambria', 'Courier New', 'Monospace';
     font-weight: 900;
 }
 
@@ -7323,7 +7291,7 @@ h2, .h2 {
 
 h3, .h3 {
     font-size: 24px;
-    font-family: 'Segoe', 'Courier New', 'Monospace';
+    font-family: 'Papyrus', 'Courier New', 'Monospace';
     font-weight: 800;
 }
 
