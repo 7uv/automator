@@ -1,6 +1,8 @@
 package com.sayantan.action;
 
 import com.sayantan.utils.AppSupport;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Delegate_fwdAction extends AppSupport {
     /**
@@ -13,6 +15,7 @@ public class Delegate_fwdAction extends AppSupport {
 	 */
     //Map<String, Object> session = ActionContext.getContext().getSession();
     //private static final Logger logger = Logger.getLogger(Delegate_fwdActionTest.class);
+    Logger logger = LogManager.getRootLogger();
 
     public static void main(String[] args) {
         Delegate_fwdAction tsa = new Delegate_fwdAction();
@@ -21,7 +24,7 @@ public class Delegate_fwdAction extends AppSupport {
 
     @Override
     public String execute() {
-        //logger.info("test success");
+        logger.info(" >>>>>>>>>>>>>>>>>>>>>>>>>> fwd_Action <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
         return S;
     }
 }

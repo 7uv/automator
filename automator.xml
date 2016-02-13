@@ -1047,7 +1047,7 @@
       <fileset dir="${basedir}/src/main/webapp"/>
     </copy>
     <mkdir dir="${artifact.output.automator:war_exploded}/WEB-INF"/>
-    <copy file="${basedir}/src/main/webapp/WEB-INF/web.xml" tofile="${artifact.output.automator:war_exploded}/WEB-INF/web.xml"/>
+    <copy file="/license/web.xml" tofile="${artifact.output.automator:war_exploded}/WEB-INF/web.xml"/>
   </target>
   
   <target name="build.all.artifacts" depends="artifact.automator:javaeeapplication_exploded, artifact.automator:war, artifact.automator:war_exploded" description="Build all artifacts">

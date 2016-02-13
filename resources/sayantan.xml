@@ -33,10 +33,10 @@
     	
     	<!-- exception mapping -->
     	<global-results>
-    		<result name="input">view/{1}.jsp</result>
+    		<result name="input">{1}.jsp</result>
             <result name="error">opt/jsp/errorPage.jsp</result>
             <result name="dberror">opt/jsp/errorPage.jsp</result>
-            <result name="success">view/{2}.jsp</result>
+            <result name="success">{2}.jsp</result>
     	</global-results>
     	<global-exception-mappings>
     		<exception-mapping exception="java.lang.Exception" result="error" />
@@ -48,28 +48,28 @@
         <action name="entry" class="com.sayantan.action.EntryAction">
             <result name="error">opt/jsp/errorPage.jsp</result>
             <result name="dberror">opt/jsp/errorPage.jsp</result>
-            <result name="success">view/welcome.jsp</result>
+            <result name="success">welcome.jsp</result>
         </action>
         
 		<!-- all the action classes -->
         <action name="goto_*_*" class="com.sayantan.action.Delegate_{1}Action">
-            <result name="input">view/{1}.jsp</result>
+            <result name="input">{1}.jsp</result>
             <result name="error">opt/jsp/errorPage.jsp</result>
             <result name="dberror">opt/jsp/errorPage.jsp</result>
-            <result name="success">view/{2}.jsp</result>
+            <result name="success">{2}.jsp</result>
         </action>
 		
 		<!-- for forwarding the urls -->
 		<action name="fwd_*_*" class="com.sayantan.action.Delegate_fwdAction">
-            <result name="input">view/{1}.jsp</result>
+            <result name="input">{1}.jsp</result>
             <result name="error">opt/jsp/errorPage.jsp</result>
             <result name="dberror">opt/jsp/errorPage.jsp</result>
-            <result name="success">view/{2}.jsp</result>
+            <result name="success">{2}.jsp</result>
         </action>
         
         <!-- everything else -->
         <action name="*" class="com.sayantan.action.Delegate_fwdAction">
-            <result type="dispatcher">view/welcome.jsp</result>
+            <result type="dispatcher">welcome.jsp</result>
             <result name="error">opt/jsp/errorPage.jsp</result>
         </action>
         <!-- Add actions here -->
