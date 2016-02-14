@@ -6,13 +6,13 @@
 <struts>
 
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
-    <constant name="struts.devMode" value="true" />
+    <constant name="struts.devMode" value="false" />
 
     <include file="struts-default.xml"/>
     <include file="sayantan.xml"/>
 
     <package name="default" namespace="/" extends="struts-default">
-        <default-action-ref name="index" />
+        <default-action-ref name="listStudents" />
         <action name="index">
             <result type="redirectAction">
                 <param name="actionName">entry</param>

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<jsp:include page="../opt/jsp/header.jsp" />
+		<jsp:include page="opt/jsp/header.jsp" />
 	</header>
 This will be the default read me page.
 	<footer>
@@ -18,7 +18,7 @@ This will be the default read me page.
 				<a href="https://www.sayantan.london/"></a>
 			</div>
 		</div>
-		<jsp:include page="../opt/jsp/footer.jsp" />
+		<jsp:include page="opt/jsp/footer.jsp" />
 	</footer>
 </body>
 </html>

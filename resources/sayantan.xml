@@ -41,16 +41,15 @@
     	<global-exception-mappings>
     		<exception-mapping exception="java.lang.Exception" result="error" />
     		<exception-mapping exception="java.lang.RuntimeException" result="error" />
-    		<exception-mapping exception="java.lang.SQLException" result="dberror" />
     	</global-exception-mappings>
-		
+
 		<!-- welcome redirection -->
         <action name="entry" class="com.sayantan.action.EntryAction">
             <result name="error">opt/jsp/errorPage.jsp</result>
             <result name="dberror">opt/jsp/errorPage.jsp</result>
             <result name="success">welcome.jsp</result>
         </action>
-        
+
 		<!-- all the action classes -->
         <action name="goto_*_*" class="com.sayantan.action.Delegate_{1}Action">
             <result name="input">{1}.jsp</result>
@@ -58,7 +57,7 @@
             <result name="dberror">opt/jsp/errorPage.jsp</result>
             <result name="success">{2}.jsp</result>
         </action>
-		
+
 		<!-- for forwarding the urls -->
 		<action name="fwd_*_*" class="com.sayantan.action.Delegate_fwdAction">
             <result name="input">{1}.jsp</result>
@@ -66,12 +65,28 @@
             <result name="dberror">opt/jsp/errorPage.jsp</result>
             <result name="success">{2}.jsp</result>
         </action>
-        
+
+        <!-- Additional actions here -->
+        <action name="addStudent" method="execute"
+                class="com.sayantan.action.AddStudentAction">
+            <result name="success">
+                welcome.jsp
+            </result>
+            <result name="error">opt/jsp/errorPage.jsp</result>
+        </action>
+        <action name="listStudents" method="listStudents"
+                class="com.sayantan.action.AddStudentAction">
+            <result name="success">student.jsp</result>
+        </action>
+		<action name="hibTest" method="execute" class="com.sayantan.testingbed.HelloWorldHibAction">
+            <result name="success">hibOutput.jsp</result>
+            <result name="error">opt/jsp/errorPage.jsp</result>
+        </action>
+
         <!-- everything else -->
         <action name="*" class="com.sayantan.action.Delegate_fwdAction">
             <result type="dispatcher">welcome.jsp</result>
             <result name="error">opt/jsp/errorPage.jsp</result>
         </action>
-        <!-- Add actions here -->
     </package>
 </struts>

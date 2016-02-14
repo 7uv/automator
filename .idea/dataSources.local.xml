@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - clientMaster@localhost" uuid="ff43d516-ba23-40ea-8464-273a4eaabdf9">
+      <secret-storage>master_key</secret-storage>
+      <user-name>adminJHD5464</user-name>
+      <schema-pattern>clientmaster.*</schema-pattern>
+      <default-schemas>clientmaster.*</default-schemas>
+    </data-source>
+    <data-source name="PostgreSQL - postgres@localhost" uuid="423db6d4-fc30-4581-b1ce-4742a0cff7af">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-pattern>postgres.pg_catalog postgres.public</schema-pattern>
+      <default-schemas>postgres.public</default-schemas>
+    </data-source>
+  </component>
+</project>

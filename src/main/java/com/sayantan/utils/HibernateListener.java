@@ -11,7 +11,7 @@ public class HibernateListener implements ServletContextListener {
     public static final String KEY_NAME = clazz.getName();
     private Configuration config;
     private SessionFactory factory;
-    private String path = "/main/resources/hibernate.cfg.xml";
+    private String path = "/resources/hibernate.cfg.xml";
 
     public void contextDestroyed(ServletContextEvent event) {
         //
