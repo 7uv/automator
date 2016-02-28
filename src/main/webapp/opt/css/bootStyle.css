@@ -4339,7 +4339,11 @@ select[multiple].input-group-sm > .input-group-addon, select[multiple].input-gro
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #ffffff;
+<<<<<<< HEAD
     background-color: none;
+=======
+    background-color: unset;
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
 }
 
 .navbar-default .navbar-text {
@@ -4447,7 +4451,11 @@ select[multiple].input-group-sm > .input-group-addon, select[multiple].input-gro
 
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
     color: #ffffff;
+<<<<<<< HEAD
     background-color: none;
+=======
+    background-color: unset;
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
 }
 
 .navbar-inverse .navbar-text {
@@ -4986,6 +4994,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     color: #953b39;
 }
 
+<<<<<<< HEAD
 @
 -webkit-keyframes progress-bar-stripes {
 
@@ -5012,6 +5021,8 @@ to {
 }
 
 }
+=======
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
 .progress {
     overflow: hidden;
     height: 20px;
@@ -6453,12 +6464,15 @@ button.close {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
 }
+<<<<<<< HEAD
 
 @
 -ms-viewport {
     width: device-width;
 }
 
+=======
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
     display: none !important;
 }
@@ -7313,7 +7327,11 @@ h4 small, .h4 small, h5 small, .h5 small, h6 small, .h6 small, h4 .small,
 h1, .h1 {
     font-size: 36px;
     font-variant: small-caps;
+<<<<<<< HEAD
     font-family: 'American Typewriter', 'Courier New', 'Monospace';
+=======
+    font-family: 'Cambria', 'Courier New', 'Monospace';
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
     font-weight: 900;
 }
 
@@ -7323,7 +7341,11 @@ h2, .h2 {
 
 h3, .h3 {
     font-size: 24px;
+<<<<<<< HEAD
     font-family: 'Segoe', 'Courier New', 'Monospace';
+=======
+    font-family: 'Papyrus', 'Courier New', 'Monospace';
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
     font-weight: 800;
 }
 

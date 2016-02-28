@@ -53,7 +53,11 @@ repositories {
 
 repositories {
     localrepo {
+<<<<<<< HEAD
         dirs "../resources/WEB-INF/lib"
+=======
+        dirs "lib"
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
     }
     dist {
         dirs "repo"
@@ -65,7 +69,11 @@ dependencies {
     providedCompile group: 'javax', name: 'javaee-api', version: '6+'
 
     // putting all jars from 'libs' onto compile classpath
+<<<<<<< HEAD
     compile fileTree('../resources/WEB-INF/lib')
+=======
+    compile fileTree('lib')
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
 
     // mysql connector j
     compile 'mysql:mysql-connector-java:5.1.28'
@@ -122,7 +130,11 @@ eclipse {
 }
 
 // WebApp Content Folder
+<<<<<<< HEAD
 webAppDirName = "../resources"
+=======
+webAppDirName = "src/main/webapp"
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
 
 /*
 // Currently using sourceSets to configure the complete folder structure.
@@ -145,7 +157,11 @@ sourceSets {
             exclude "**/*Test.java"
         }
         resources {
+<<<<<<< HEAD
             srcDirs = ["src/main/resources", "src"]
+=======
+            srcDirs = ["resources", "src"]
+>>>>>>> 1c3088ca792775784464bd0fa9211ee69ab6f9f5
         }
     }
     test {

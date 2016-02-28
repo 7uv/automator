@@ -9,15 +9,15 @@ import java.util.Map;
 public class DBConnector {
     public Map<String, String> mysql = new HashMap<String, String>();
     private MessageDigest md;
-    private String uname = "root";
-    private String password = "s3rect";
+    private String uname = "adminJHD5464";
+    private String password = "A564SFDa654dsf";
     private String digest;
 
     public DBConnector() {
         mysql.put("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
         mysql.put("hibernate.connection.driver_class", "com.mysql.jdbc.Driver");
         mysql.put("hibernate.connection.url",
-                "jdbc:mysql://localhost:3306/mysql");
+           "jdbc:mysql://localhost:3306/clientMaster");
         mysql.put("hibernate.connection.username", uname);
         mysql.put("hibernate.connection.password", password);
     }

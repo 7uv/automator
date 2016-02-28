@@ -1,0 +1,8 @@
+.settings/*
+!.settings/.jsdtscope
+.project
+.classpath
+/target/
+/*/build/
+/ci/repo/
+/out/
